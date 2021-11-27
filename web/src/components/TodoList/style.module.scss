@@ -1,0 +1,17 @@
+.TodoList {
+  &__loading {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  &__empty {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  &__inner {
+
+  }
+}

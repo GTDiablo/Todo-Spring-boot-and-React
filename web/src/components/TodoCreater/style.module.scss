@@ -1,0 +1,22 @@
+.TodoCreator {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 8px;
+  //padding: $base-padding * 2px;
+  padding: 16px;
+  background-color: #3C5253;
+  margin-bottom: 30px;
+
+  &__input {
+    flex: 1;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0 8px;
+    margin-right: 16px;
+  }
+
+  &__button{
+
+  }
+}

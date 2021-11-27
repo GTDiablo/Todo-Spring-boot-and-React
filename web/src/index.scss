@@ -1,0 +1,20 @@
+$base-padding: 8;
+$primary-color: #2B3A3B;
+$secondary-color: #292f36;
+$action-color: #F18F01;
+$green: #99C24D;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  font-size: 62.5%;
+  width: 100vw;
+  height: 100vh;
+  background-color: $primary-color;
+}

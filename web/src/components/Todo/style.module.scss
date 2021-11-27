@@ -1,0 +1,44 @@
+$todo-height: 80px;
+$todo-color: #3C5253;
+
+.Todo {
+  width: 100%;
+  height: $todo-height;
+  border-radius: 8px;
+  background-color: $todo-color;
+  border: 1px solid black;
+  //padding: $base-padding * 2px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+
+  & ~ & {
+    margin-top: 15px;
+  }
+
+  &__body {
+    flex: 1;
+
+    &__main {
+      flex: 1;
+      display: flex;
+
+      &__checkbox {
+        cursor: pointer;
+        vertical-align: center;
+      }
+    }
+  }
+
+  &__footer {
+    font-size: 1.4rem;
+    user-select: none;
+  }
+
+  &__delete {
+    font-size: 1.4rem;
+    user-select: none;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}

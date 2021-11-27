@@ -1,0 +1,24 @@
+.Header {
+  background-color: #292f36;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+
+  &__inner {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    color: white;
+  }
+
+  &__name {
+    margin-right: 30px;
+  }
+
+  &__logout {
+    cursor: pointer;
+  }
+}
