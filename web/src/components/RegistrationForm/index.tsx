@@ -7,11 +7,16 @@ const RegistrationForm = () => {
     const [username, setUsername] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [password, setPassword] = useState<string>('');
+    const [showSuccess, setShowSuccess] = useState<boolean>(false);
 
     const handleSubmit = (event: any) => {
         event.preventDefault();
         if(!!username && !!password && !!email){
             console.log('Registrate in');
+            setUsername('')
+            setPassword('')
+            setEmail('')
+            setShowSuccess(true);
             return;
         }
     }
@@ -49,6 +54,7 @@ const RegistrationForm = () => {
             </div>
 
             <Button text="Sign up" className={style["RegistrationForm__submit"]}  onClick={()=>{}} />
+            {showSuccess && <div className={style['RegistrationForm__success']}>Successful registration.</div>}
 
         </form>
     )

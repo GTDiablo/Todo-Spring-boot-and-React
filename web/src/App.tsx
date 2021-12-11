@@ -5,7 +5,7 @@ import LoggedInLayout from "./components/LoggedInLayout";
 import LoggedOutLayout from "./components/LoggedOutLayout";
 
 function App() {
-  const isLoggedIn = true;
+  const isLoggedIn = localStorage.getItem('loggedin');
   return (
     <div className={styles["App"]}>
         {isLoggedIn ? <LoggedInLayout /> : <LoggedOutLayout/>}

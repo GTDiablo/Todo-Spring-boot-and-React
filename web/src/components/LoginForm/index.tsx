@@ -11,6 +11,8 @@ const LoginForm = () => {
         event.preventDefault();
         if(!!username && !!password){
             console.log('Logging in');
+            localStorage.setItem('loggedin', JSON.stringify(true));
+            window.location.reload();
         }
     }
     return(
